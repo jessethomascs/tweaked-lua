@@ -23,11 +23,11 @@ function ret.debug(...)
     fileLocation = debugFile or fs.getDir() .. "debug.log" -- Spits out a debug log in current dir
     enableDebugging = enableDebugging or 0
 
-    str = where_descriptor .. ": " .. value_descriptor
+    local str = where_descriptor .. ": " .. value_descriptor
     stringBuilder(str)
 
     if enableDebugging then
-        publicize()
+        publish()
     end
 end
 
@@ -40,7 +40,7 @@ function ret.stringBuilder(textIncrement)
     strBuilder = buffer
 end
 
-function ret.publicize()
+function ret.publish()
     -- Go ahead to nuke old debug text file and establish new file
     if fs.exists(fileLocation) then
         fs.delete(fileLocation) -- adios
