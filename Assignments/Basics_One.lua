@@ -72,7 +72,7 @@ Assignment:
 
             { // What is a {}? This will help you answer your question
                 int c = a + b;
-                int d = c / (c * c)
+                int d = c / (c * c);
             }
 
             // Printing
