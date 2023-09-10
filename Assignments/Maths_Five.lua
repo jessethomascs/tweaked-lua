@@ -1,2 +1,5 @@
 --[[
-This is a homework that will be filled out at a later date to be finished! ]]--
+
+-- This assignment will be using the following sections from Khan Academy:
+    -- Linear Algebra [https://www.khanacademy.org/math/linear-algebra]
+]]--

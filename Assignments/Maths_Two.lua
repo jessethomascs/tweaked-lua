@@ -1,2 +1,7 @@
 --[[
-This is a homework that will be filled out at a later date to be finished! ]]--
+The following section will use the following sections from Khan Academy:
+
+-- Trigonometry [https://www.khanacademy.org/math/trigonometry]
+-- Pre-calculus [https://www.khanacademy.org/math/precalculus]
+
+]]--
