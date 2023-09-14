@@ -48,7 +48,7 @@ Assignment:
 
             -- Q2EE
             
-        2F: What are the nuanced differences between data hding and data encapsulation? Do they involve each other typically?
+        2F: What are the nuanced differences between data hiding and data encapsulation? Do they involve each other typically?
             -- Q2F
 
             -- Q2FE
