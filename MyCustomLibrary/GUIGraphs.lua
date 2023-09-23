@@ -78,7 +78,7 @@ function ret.BarGraphCreate(windowName, dataLocation, windowHeight, windowWidth)
             -- columnValue[i] should just be a flat number
             win.setTextColor(colors.blue) -- will alternate colors later (TODO)
             win.write("X")
-            win.setCursorPos(3,winY-1)
+            --win.setCursorPos(3,winY-1) -- Why do I even have this here? REMOVE REDUNDANT
         end
         -- In theory, that's a column done
         win.setCursorPos(3 + barSpacing)
@@ -86,8 +86,21 @@ function ret.BarGraphCreate(windowName, dataLocation, windowHeight, windowWidth)
 
     -- now we must draw out legend
     win.setCursorPos(maxGraphWidth, 1)
-    for i=1, do
+    for i=1,windowWidth-maxGraphWidth do
 
+        for j=1,windowWidth-maxGraphWidth do
+            win.setTextColor(colors.white)
+            win.write(" ")
+        end
+        win.setCursorPos(maxGraphWidth, i + 1)
+    end
+
+    -- write legend
+    win.setCursorPos(maxGraphWidth + 3, 2) -- +3 is a buffer, y=2 is also buffer
+    for i=1,#columnNames do
+        win.setTextColor(colors.black) -- There needs to be a legend color system here
+        win.write(columnNames[i])
+        win.setCursorPos(maxGraphWidth + 3, (i+1) + 3) -- (i+1) + 3 wil always be 2 + 3 or +3 gap between each legend write
     end
 end
 
