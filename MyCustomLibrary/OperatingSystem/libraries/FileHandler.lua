@@ -8,6 +8,13 @@ function ret.CreateFile(name, optional_directory)
 
 end
 
+-- Attempts to create a list of directories
+-- Function will do its best to create every directory possible and move same-named prior-existing directories
+-- to a backup folder. This is obviously a volatile function with the intention of root running it in this scenario
+function ret.CreateDirectory(...)
+
+end
+
 -- First argument is top directory, second is nested in first, third is nested in second, etc...
 -- arg[1] is a boolean check to see if you wish to start from root or current directory. Function
 -- will ALWAYS assume you wish to start from root unless boolean is turned FALSE (0)

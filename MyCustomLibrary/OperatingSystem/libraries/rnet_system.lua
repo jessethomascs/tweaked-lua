@@ -1,17 +1,3 @@
--- Assignment:              Fix the missing code blocks
-
--- Restrictions:            You are not allowed to add any additional variables
---                          or functions unless otherwise told to do so
-
--- Grading Scheme:          Functional code: 60%
---                          Formatted  code: 20%
---                          Explanations   : 20%
-
--- Grade required to pass:  95%
-
-
------ START -----
-
 -- Variables
 rnet = {}
 
